@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+@function toRem($px){
+  @return $px / 40px * 1rem;       //iphone6
+}
+
+body {
+  background: #fafafa;
+}
+
+ul {
+  li {
+    padding: toRem(30px) toRem(30px) 0 toRem(30px);
+    img {
+      display: block;
+      width: 100%;
+      height: toRem(336px);
+      margin: 0 auto;
+    }
+  }
+}

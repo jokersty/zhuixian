@@ -1,0 +1,101 @@
+/*修改sui的样式问题*/
+/*兼容滚动条*/
+.page-group.page-current, .page.page-current {
+    overflow: inherit;
+}
+.page, .page-group {
+    overflow: inherit;
+}
+body {
+    overflow: visible;
+    /*ios滚动流畅*/
+    -webkit-overflow-scrolling: touch;
+}
+.page {
+    background: #fff;
+}
+/*公共*/
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    list-style: none;
+    border: 0;
+}
+li {
+    list-style: none;
+}
+
+/*边框样式*/
+.border-top {
+    position: relative;
+}
+
+.border-top:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    height: 1px;
+    width: 100%;
+    background-color: #eaeaea;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+
+.border-bottom {
+    position: relative;
+}
+
+.border-bottom:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    top: auto;
+    height: 1px;
+    width: 100%;
+    background-color: #eaeaea;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+.border-left {
+    position: relative;
+}
+
+.border-left:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    height: 100%;
+    width: 1px;
+    background-color: #eaeaea;
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+
+.border-right {
+    position: relative;
+}
+
+.border-right:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: auto;
+    bottom: auto;
+    height: 100%;
+    width: 1px;
+    background-color: #eaeaea;
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
