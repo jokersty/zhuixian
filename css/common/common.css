@@ -5,15 +5,14 @@
 }
 .page, .page-group {
     overflow: inherit;
+    background: #fff;
 }
 body {
     overflow: visible;
     /*ios滚动流畅*/
     -webkit-overflow-scrolling: touch;
 }
-.page {
-    background: #fff;
-}
+
 /*公共*/
 * {
     padding: 0;
@@ -22,6 +21,8 @@ body {
 body {
     list-style: none;
     border: 0;
+    font-size: 12px;
+    background: #fff;
 }
 li {
     list-style: none;

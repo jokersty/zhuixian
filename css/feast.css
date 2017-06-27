@@ -1,0 +1,12 @@
+.foodtitle { width: 100%; }
+.foodtitle img { display: block; width: 100%; height: 8.4rem; }
+
+.feast { font-size: 13px; color: #646464; }
+.feast .header { background: #fafafa; height: 1.85rem; padding: 0.75rem 0.75rem 0 0.75rem; }
+.feast .feast-list li { display: flex; justify-content: space-between; padding: 0.75rem; }
+.feast .feast-list li img { display: block; width: 4.5rem; height: 2.75rem; }
+.feast .feast-list li .feast-list-content h3 { font-size: 17px; font-weight: normal; }
+.feast .feast-list li .feast-list-content p { line-height: 0.75rem; font-size: 12px; margin: 0; width: 9rem; height: 1.5rem; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.feast .feast-list li .right-arrow { width: 0.5rem; heigtht: 0.9rem; background: url(../img/right-arrow.png) no-repeat center center; background-size: 0.5rem 0.9rem; }
+
+/*# sourceMappingURL=feast.css.map */

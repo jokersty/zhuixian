@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+@function toRem($px){
+  @return $px / 40px * 1rem;       //iphone6
+}
+
+.foodtitle {
+  width: 100%;
+  img {
+    display: block;
+    width: 100%;
+    height: toRem(336px);
+  }
+}
+
+.feast {
+  font-size: 13px;
+  color: #646464;
+  .header {
+    background: #fafafa;
+    height: toRem(74px);
+    padding: toRem(30px) toRem(30px) 0 toRem(30px);
+  }
+  .feast-list {
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: toRem(30px);
+      img {
+        display: block;
+        width: toRem(180px);
+        height: toRem(110px);
+      }
+      .feast-list-content {
+        h3 {
+          font-size: 17px;
+          font-weight: normal;
+        }
+        p {
+          line-height: toRem(30px);
+          font-size: 12px;
+          margin: 0;
+          width: toRem(360px);
+          height: toRem(60px);
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+        }
+      }
+      .right-arrow {
+        width: toRem(20px);
+        heigtht: toRem(36px);
+        background: url(../img/right-arrow.png) no-repeat center center;
+        background-size: toRem(20px) toRem(36px);
+      }
+    }
+  }
+}
