@@ -4,32 +4,10 @@
   @return $px / 40px * 1rem;       //iphone6
 }
 
-.bar {
-  position: static;
-  .searchbar {
-    background: #fafafa;
-    .searchbar-cancel {
-      font-size: 13px;
-    }
-    .search-input {
-      .icon-search:before {
-        width: toRem(30px);
-        height: toRem(30px);
-      }
-      input {
-        font-size: 13px;
-        border-radius: 1rem;
-        background: #f0f0f0;
-      }
-    }
-  }
-}
-.bar:after {
-  display: none!important;
-}
-
 .classify {
   padding: toRem(34px) toRem(30px);
+  margin-top: toRem(88px);
+  border-bottom: toRem(30px) solid #fafafa;
   .classify-logo {
     width: toRem(126px);
     height: toRem(50px);

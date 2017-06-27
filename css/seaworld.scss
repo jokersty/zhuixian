@@ -4,12 +4,33 @@
   @return $px / 40px * 1rem;       //iphone6
 }
 
-.foodtitle {
-  width: 100%;
-  img {
-    display: block;
-    width: 100%;
-    height: toRem(336px);
+.classify {
+  padding: toRem(34px) toRem(30px);
+  margin-top: toRem(88px);
+  border-bottom: toRem(30px) solid #fafafa;
+  .classify-logo {
+    width: toRem(126px);
+    height: toRem(50px);
+    background: url(../img/classify-logo.png) no-repeat center center;
+    background-size: toRem(126px) toRem(50px);
+  }
+  .classify-content {
+    width: 103%;
+    li {
+      display: inline-block;
+      width: toRem(104px);
+      margin: toRem(30px) toRem(2px) 0 toRem(17px);
+      img {
+        display: inline-block;
+        width: 100%;
+        height: toRem(104px);
+      }
+      h3 {
+        text-align: center;
+        color: #969696;
+        font-size: 12px;
+      }
+    }
   }
 }
 
@@ -40,7 +61,7 @@
           line-height: toRem(30px);
           font-size: 12px;
           margin: 0;
-          width: toRem(380px);
+          width: toRem(360px);
           height: toRem(60px);
           text-overflow: ellipsis;
           overflow: hidden;

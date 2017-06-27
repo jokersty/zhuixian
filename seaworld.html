@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>海鲜大餐</title>
+    <title>海鲜世界</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="/favicon.ico">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -12,23 +12,43 @@
     <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
     <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
     <link rel="stylesheet" href="css/common/common.css">
-    <link rel="stylesheet" href="css/feast.css">
+    <link rel="stylesheet" href="css/seaworld.css">
 </head>
 <body touchstart>
 <div class="page-group">
     <div class="page page-current">
-        <div class="foodtitle"><img src="img/yellow-croaker.png"/></div>
+        <div class="bar bar-header-secondary">
+            <div class="searchbar">
+                <a class="searchbar-cancel">取消</a>
+                <div class="search-input">
+                    <label class="icon icon-search" for="search"></label>
+                    <input type="search" id='search' placeholder='搜索'/>
+                </div>
+            </div>
+        </div>
+        <div class="classify border-top">
+            <div class="classify-logo"></div>
+            <ul class="classify-content">
+                <li><img src="img/fish.png"/><h3>鱼类</h3></li>
+                <li><img src="img/shell.png"/><h3>虾类</h3></li>
+                <li><img src="img/crab.png"/><h3>蟹类</h3></li>
+                <li><img src="img/shrimp.png"/><h3>贝类</h3></li>
+                <li><img src="img/drysaltery.png"/><h3>海鲜干货</h3></li>
+                <li><img src="img/seafood.png"/><h3>特色海鲜</h3></li>
+                <li><img src="img/more.png"/><h3>更多</h3></li>
+            </ul>
+        </div>
         <div class="list">
-            <div class="header">共<span id="">10</span>道菜</div>
+            <!--<div class="header">共<span id="">10</span>道菜</div>-->
             <ul class="feast-list">
                 <li class="border-bottom">
-                <img src="img/fish-dinner.png"/>
-                <div class="feast-list-content">
-                    <h3>清蒸黄鱼</h3>
-                    <p>黄鱼，有大小黄鱼之分，又名黄花鱼。黄鱼，有大小黄鱼之分，又名黄花鱼。黄鱼，有大小黄鱼之分，又名黄花鱼。</p>
-                </div>
-                <div class="right-arrow"></div>
-            </li>
+                    <img src="img/fish-dinner.png"/>
+                    <div class="feast-list-content">
+                        <h3>黄鱼</h3>
+                        <p>黄鱼，有大小黄鱼之分，又名黄花鱼。</p>
+                    </div>
+                    <div class="right-arrow"></div>
+                </li>
                 <li class="border-bottom">
                     <img src="img/fish-dinner.png"/>
                     <div class="feast-list-content">
@@ -77,6 +97,6 @@
 <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
 <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
 <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
-<script src="js/feast.js"></script>
+<script src="js/seaworld.js"></script>
 </body>
 </html>

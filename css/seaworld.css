@@ -1,10 +1,31 @@
-.foodtitle {
-  width: 100%;
+.classify {
+  padding: 0.85rem 0.75rem;
+  margin-top: 2.2rem;
+  border-bottom: 0.75rem solid #fafafa;
 }
-.foodtitle img {
-  display: block;
+.classify .classify-logo {
+  width: 3.15rem;
+  height: 1.25rem;
+  background: url(../img/classify-logo.png) no-repeat center center;
+  background-size: 3.15rem 1.25rem;
+}
+.classify .classify-content {
+  width: 103%;
+}
+.classify .classify-content li {
+  display: inline-block;
+  width: 2.6rem;
+  margin: 0.75rem 0.05rem 0 0.425rem;
+}
+.classify .classify-content li img {
+  display: inline-block;
   width: 100%;
-  height: 8.4rem;
+  height: 2.6rem;
+}
+.classify .classify-content li h3 {
+  text-align: center;
+  color: #969696;
+  font-size: 12px;
 }
 
 .list {
@@ -34,7 +55,7 @@
   line-height: 0.75rem;
   font-size: 12px;
   margin: 0;
-  width: 9.5rem;
+  width: 9rem;
   height: 1.5rem;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -49,4 +70,4 @@
   background-size: 0.5rem 0.9rem;
 }
 
-/*# sourceMappingURL=feast.css.map */
+/*# sourceMappingURL=seaworld.css.map */

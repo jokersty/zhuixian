@@ -1,28 +1,7 @@
-.bar {
-  position: static;
-}
-.bar .searchbar {
-  background: #fafafa;
-}
-.bar .searchbar .searchbar-cancel {
-  font-size: 13px;
-}
-.bar .searchbar .search-input .icon-search:before {
-  width: 0.75rem;
-  height: 0.75rem;
-}
-.bar .searchbar .search-input input {
-  font-size: 13px;
-  border-radius: 1rem;
-  background: #f0f0f0;
-}
-
-.bar:after {
-  display: none !important;
-}
-
 .classify {
   padding: 0.85rem 0.75rem;
+  margin-top: 2.2rem;
+  border-bottom: 0.75rem solid #fafafa;
 }
 .classify .classify-logo {
   width: 3.15rem;
