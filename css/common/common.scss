@@ -1,15 +1,17 @@
-@charset "UTF-8";
+@charset "utf-8";
+
+@function toRem($px){
+  @return $px / 40px * 1rem;       //iphone6
+}
 /*修改sui的样式问题*/
 /*兼容滚动条*/
 .page-group.page-current, .page.page-current {
   overflow: inherit;
 }
-
 .page, .page-group {
   overflow: inherit;
   background: #fff;
 }
-
 body {
   overflow: visible;
   /*ios滚动流畅*/
@@ -21,18 +23,15 @@ body {
   padding: 0;
   margin: 0;
 }
-
 body {
   list-style: none;
   border: 0;
   font-size: 12px;
   background: #fff;
 }
-
 li {
   list-style: none;
 }
-
 /*搜索栏*/
 .searchway {
   width: 100%;
@@ -40,42 +39,44 @@ li {
   top: 0;
   left: 0;
   background: #fafafa;
-  height: 2.5rem;
-  padding: 0.4rem 0.75rem;
+  height: toRem(100px);
+  padding: toRem(16px) toRem(30px);
   border-bottom: 1px solid #eaeaea;
-}
-.searchway .searchway-input {
-  display: block;
-  background: #f0f0f0;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.85rem;
-}
-.searchway .searchway-input .searchway-alt {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  line-height: 1.7rem;
-  text-align: center;
-  font-size: 13px;
-  color: #979797;
-}
-.searchway .searchway-input .searchway-alt .search-cion {
-  display: block;
-  position: absolute;
-  left: 40%;
-  top: 0.4rem;
-  background: url(../../img/search.png) no-repeat center center;
-  background-size: 0.85rem 0.8rem;
-  width: 0.85rem;
-  height: 0.8rem;
+  .searchway-input {
+    display: block;
+    background: #f0f0f0;
+    width: 100%;
+    height: 100%;
+    border-radius: toRem(34px);
+    .searchway-alt {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      line-height: toRem(68px);
+      text-align: center;
+      font-size: 13px;
+      color: #979797;
+      .search-cion {
+        display: block;
+        position: absolute;
+        left: 40%;
+        top: toRem(16px);
+        background: url(../../img/search.png) no-repeat center center;
+        background-size: toRem(34px) toRem(32px);
+        width: toRem(34px);
+        height: toRem(32px);
+      }
+    }
+  }
 }
 
 .searchtext {
   display: flex;
   justify-content: space-between;
-}
+  .searchtext-back {
 
+  }
+}
 /*.bar {*/
 /*position: fixed;*/
 /*top: 0;*/
@@ -106,36 +107,31 @@ li {
   top: 0;
   left: 0;
 }
-
 .bar .searchbar {
   background: #fafafa;
 }
-
 .bar .searchbar .searchbar-back {
   background: url(../../img/left-arrow.png) no-repeat center center;
   background-size: 0.5rem 0.9rem;
   width: 0.5rem;
   height: 0.9rem;
 }
-
 .bar .searchbar .searchbar-cancel {
   font-size: 13px;
 }
-
 .bar .searchbar .search-input .icon-search:before {
   width: 0.75rem;
   height: 0.75rem;
 }
-
 .bar .searchbar .search-input input {
   font-size: 13px;
   border-radius: 1rem;
   background: #f0f0f0;
 }
-
 .bar:after {
   display: none !important;
 }
+
 
 /*边框样式*/
 .border-top {
@@ -209,5 +205,3 @@ li {
   -webkit-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
 }
-
-/*# sourceMappingURL=common.css.map */
