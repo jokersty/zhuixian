@@ -6,3 +6,6 @@
 $('#searchway').click(function () {
     $.router.load("#router2");
 })
+$('#searchtextBack').click(function () {
+    $.router.back();
+})

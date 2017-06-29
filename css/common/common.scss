@@ -74,7 +74,43 @@ li {
   display: flex;
   justify-content: space-between;
   .searchtext-back {
-
+    background: url(../../img/left-arrow.png) no-repeat center center;
+    width: toRem(20px);
+    height: 100%;
+    background-size: toRem(20px) toRem(36px);
+  }
+  .searchtext-input {
+    height: 100%;
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    .search-icon {
+      position: absolute;
+      display: inline-block;
+      left: toRem(12px);
+      top: toRem(16px);
+      background: url(../../img/search.png) no-repeat center center;
+      background-size: toRem(34px) toRem(32px);
+      width: toRem(34px);
+      height: toRem(32px);
+    }
+    input {
+      border: 0;
+      height: 100%;
+      border-radius: toRem(30px);
+      background: #f0f0f0;
+      padding : 0 toRem(30px) 0 toRem(55px);
+      width: 80%;
+    }
+  }
+  .goSearch {
+    width: toRem(124px);
+    height: 100%;
+    line-height: toRem(68px);
+    color: #fff;
+    background: #0aabf5;
+    text-align: center;
+    border-radius: toRem(30px);
   }
 }
 /*.bar {*/
