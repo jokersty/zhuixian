@@ -9,3 +9,6 @@ $('#searchway').click(function () {
 $('#searchtextBack').click(function () {
     $.router.back();
 })
+$('.searchway-input').on('click',function () {
+    $('#search').focus();
+})
