@@ -17,13 +17,9 @@
 <body touchstart>
 <div class="page-group">
     <div class="page page-current">
-        <div class="bar bar-header-secondary">
-            <div class="searchbar">
-                <a class="searchbar-cancel">取消</a>
-                <div class="search-input">
-                    <label class="icon icon-search" for="search"></label>
-                    <input type="search" id='search' placeholder='搜索'/>
-                </div>
+        <div class="searchway">
+            <div class="searchway-input">
+                <div class="searchway-alt" id="searchway"><i class="search-cion"></i>搜索</div>
             </div>
         </div>
         <div class="classify border-top">
@@ -45,6 +41,16 @@
                 <li><img src="img/yellow-croaker.png"/></li>
                 <li><img src="img/yellow-croaker.png"/></li>
             </ul>
+        </div>
+    </div>
+    <div class="page" id="router2">
+        <div class="searchway searchtext">
+            <div class="searchtext-back" id="searchtextBack"></div>
+            <div class="searchtext-input">
+                <label class="search-icon" for="search"></label>
+                <input type="search" id='search' autofocus="autofocus" placeholder='输入关键字...'/>
+            </div>
+            <div class="goSearch" id="goSearch">搜索</div>
         </div>
     </div>
 </div>
