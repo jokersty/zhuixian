@@ -12,6 +12,7 @@
 
 body {
   overflow: visible;
+  font-size: 12px;
   /*ios滚动流畅*/
   -webkit-overflow-scrolling: touch;
 }
@@ -25,14 +26,15 @@ body {
 body {
   list-style: none;
   border: 0;
-  font-size: 12px;
   background: #fff;
 }
 
 li {
   list-style: none;
 }
-
+.modal-text {
+  font-size: 17px;
+}
 /*搜索栏*/
 .searchway {
   width: 100%;

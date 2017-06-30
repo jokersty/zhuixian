@@ -28,10 +28,20 @@
   font-size: 12px;
 }
 
-.fish ul li {
+.food ul li {
+  width: 100%;
+  height: 1000px;
+}
+.food ul li img {
+  display: block;
+  width: 100%;
+  height: 8rem;
+}
+
+.food-list {
   width: 100%;
 }
-.fish ul li img {
+.food-list img {
   display: block;
   width: 100%;
   height: 8rem;

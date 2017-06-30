@@ -16,7 +16,7 @@
 </head>
 <body touchstart>
 <div class="page-group">
-    <div class="page page-current">
+    <div class="page page-current" id="router">
         <div class="searchway">
             <div class="searchway-input">
                 <div class="searchway-alt" id="searchway"><i class="search-cion"></i>搜索</div>
@@ -25,66 +25,26 @@
         <div class="classify">
             <div class="classify-logo"></div>
             <ul class="classify-content">
-                <li><img src="img/fish.png"/><h3>鱼类</h3></li>
-                <li><img src="img/shell.png"/><h3>虾类</h3></li>
-                <li><img src="img/crab.png"/><h3>蟹类</h3></li>
-                <li><img src="img/shrimp.png"/><h3>贝类</h3></li>
-                <li><img src="img/drysaltery.png"/><h3>海鲜干货</h3></li>
-                <li><img src="img/seafood.png"/><h3>特色海鲜</h3></li>
-                <li><img src="img/more.png"/><h3>更多</h3></li>
+                <li value="1"><img src="img/fish.png"/><h3>鱼类</h3></li>
+                <li value="2"><img src="img/shell.png"/><h3>虾类</h3></li>
+                <li value="3"><img src="img/crab.png"/><h3>蟹类</h3></li>
+                <li value="4"><img src="img/shrimp.png"/><h3>贝类</h3></li>
+                <li value="5"><img src="img/drysaltery.png"/><h3>海鲜干货</h3></li>
+                <li value="6"><img src="img/seafood.png"/><h3>特色海鲜</h3></li>
+                <!--<li><img src="img/more.png"/><h3>更多</h3></li>-->
             </ul>
         </div>
         <div class="list">
             <!--<div class="header">共<span id="">10</span>道菜</div>-->
-            <ul class="feast-list">
-                <li class="border-bottom">
-                    <img src="img/fish-dinner.png"/>
-                    <div class="feast-list-content">
-                        <h3>黄鱼</h3>
-                        <p>黄鱼，有大小黄鱼之分，又名黄花鱼。</p>
-                    </div>
-                    <div class="right-arrow"></div>
-                </li>
-                <li class="border-bottom">
-                    <img src="img/fish-dinner.png"/>
-                    <div class="feast-list-content">
-                        <h3>清蒸黄鱼</h3>
-                        <p>黄鱼，有大小黄鱼之分，又名黄花鱼。黄鱼，有大小黄鱼之分，又名黄花鱼。黄鱼，有大小黄鱼之分，又名黄花鱼。</p>
-                    </div>
-                    <div class="right-arrow"></div>
-                </li>
-                <li class="border-bottom">
-                    <img src="img/fish-dinner.png"/>
-                    <div class="feast-list-content">
-                        <h3>清蒸黄鱼</h3>
-                        <p>黄鱼，有大小黄鱼之分，又名黄花鱼。黄鱼，有大小黄鱼之分，又名黄花鱼。黄鱼，有大小黄鱼之分，又名黄花鱼。</p>
-                    </div>
-                    <div class="right-arrow"></div>
-                </li>
-                <li class="border-bottom">
-                    <img src="img/fish-dinner.png"/>
-                    <div class="feast-list-content">
-                        <h3>清蒸黄鱼</h3>
-                        <p>黄鱼，有大小黄鱼之分，又名黄花鱼。黄鱼，有大小黄鱼之分，又名黄花鱼。黄鱼，有大小黄鱼之分，又名黄花鱼。</p>
-                    </div>
-                    <div class="right-arrow"></div>
-                </li>
-                <li class="border-bottom">
-                    <img src="img/fish-dinner.png"/>
-                    <div class="feast-list-content">
-                        <h3>清蒸黄鱼</h3>
-                        <p>黄鱼，有大小黄鱼之分，又名黄花鱼。黄鱼，有大小黄鱼之分，又名黄花鱼。黄鱼，有大小黄鱼之分，又名黄花鱼。</p>
-                    </div>
-                    <div class="right-arrow"></div>
-                </li>
-                <li class="border-bottom">
-                    <img src="img/fish-dinner.png"/>
-                    <div class="feast-list-content">
-                        <h3>清蒸黄鱼</h3>
-                        <p>黄鱼，有大小黄鱼之分，又名黄花鱼。黄鱼，有大小黄鱼之分，又名黄花鱼。黄鱼，有大小黄鱼之分，又名黄花鱼。</p>
-                    </div>
-                    <div class="right-arrow"></div>
-                </li>
+            <ul class="feast-list" id="List">
+                <!--<li class="border-bottom">-->
+                    <!--<img src="img/fish-dinner.png"/>-->
+                    <!--<div class="feast-list-content">-->
+                        <!--<h3>黄鱼</h3>-->
+                        <!--<p>黄鱼，有大小黄鱼之分，又名黄花鱼。</p>-->
+                    <!--</div>-->
+                    <!--<div class="right-arrow"></div>-->
+                <!--</li>-->
             </ul>
         </div>
     </div>
@@ -93,12 +53,25 @@
             <div class="searchtext-back" id="searchtextBack"></div>
             <div class="searchtext-input">
                 <label class="search-icon" for="search"></label>
-                <input type="search" id='search' autofocus="autofocus" placeholder='输入关键字...'/>
+                <input type="search" id='search' autofocus="autofocus" placeholder='请输入您要查询的海鲜'/>
             </div>
             <div class="goSearch" id="goSearch">搜索</div>
         </div>
     </div>
 </div>
+
+<script id="fishList" type="text/template">
+    {{each data as $value}}
+    <li class="border-bottom">
+        <img src="{{$value.imgsrc}}"/>
+        <div class="feast-list-content">
+            <h3>{{$value.fishName}}</h3>
+            <p>{{$value.fishText}}</p>
+        </div>
+        <div class="right-arrow"></div>
+    </li>
+    {{/each}}
+</script>
 
 <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
 <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>

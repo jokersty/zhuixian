@@ -16,13 +16,13 @@
 </head>
 <body touchstart>
 <div class="page-group">
-    <div class="page page-current">
+    <div class="page page-current" id="router">
         <div class="searchway">
             <div class="searchway-input">
                 <div class="searchway-alt" id="searchway"><i class="search-cion"></i>搜索</div>
             </div>
         </div>
-        <div class="classify border-top">
+        <div class="classify">
             <div class="classify-logo"></div>
             <ul class="classify-content">
                 <li><img src="img/fish.png"/><h3>鱼类</h3></li>
@@ -31,15 +31,13 @@
                 <li><img src="img/shrimp.png"/><h3>贝类</h3></li>
                 <li><img src="img/drysaltery.png"/><h3>海鲜干货</h3></li>
                 <li><img src="img/seafood.png"/><h3>特色海鲜</h3></li>
-                <li><img src="img/more.png"/><h3>更多</h3></li>
+                <!--<li><img src="img/more.png"/><h3>更多</h3></li>-->
             </ul>
         </div>
         <!--鱼类-->
-        <div class="fish" id="fish">
+        <div class="food" id="food">
             <ul>
-                <li id="toSeafood"><img src="img/yellow-croaker.png"/></li>
-                <li><img src="img/yellow-croaker.png"/></li>
-                <li><img src="img/yellow-croaker.png"/></li>
+                <!--<li id="toSeafood"><img src="img/yellow-croaker.png"/></li>-->
             </ul>
         </div>
     </div>
@@ -48,13 +46,17 @@
             <div class="searchtext-back" id="searchtextBack"></div>
             <div class="searchtext-input">
                 <label class="search-icon" for="search"></label>
-                <input type="search" id='search' autofocus="autofocus" placeholder='输入关键字...'/>
+                <input type="search" id='search' autofocus="autofocus" placeholder='请输入您要查询的菜谱'/>
             </div>
             <div class="goSearch" id="goSearch">搜索</div>
         </div>
     </div>
 </div>
-
+<script id="foodList" type="text/template">
+    {{each data as $value}}
+        <li class="food-list"><a href="feast.html" class="external"><img src="{{$value.imgsrc}}"/></a></li>
+    {{/each}}
+</script>
 <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
 <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
 <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
