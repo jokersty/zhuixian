@@ -6,11 +6,11 @@ var seafood = (function () {
             url: "",
             data: content,
             success: function (result) {
-                result = {data:[
-                    {imgsrc: "img/yellow-croaker.png", foodName:"● 美味十足的黄鱼菜谱", foodEffect:"用于治疗淤血疥癣"},
-                    {imgsrc: "img/yellow-croaker.png", foodName:"● 美味十足的黄鱼菜谱", foodEffect:"用于治疗淤血疥癣"},
-                    {imgsrc: "img/yellow-croaker.png", foodName:"● 美味十足的黄鱼菜谱", foodEffect:"用于治疗淤血疥癣"},
-                    {imgsrc: "img/yellow-croaker.png", foodName:"● 美味十足的黄鱼菜谱", foodEffect:"用于治疗淤血疥癣"}
+                result = {
+                    data:[{imgsrc: "img/yellow-croaker.png", foodName:"● 美味十足的黄鱼菜谱", foodEffect:"用于治疗淤血疥癣", foodId:"1"},
+                    {imgsrc: "img/yellow-croaker.png", foodName:"● 美味十足的黄鱼菜谱", foodEffect:"用于治疗淤血疥癣", foodId:"2"},
+                    {imgsrc: "img/yellow-croaker.png", foodName:"● 美味十足的黄鱼菜谱", foodEffect:"用于治疗淤血疥癣", foodId:"3"},
+                    {imgsrc: "img/yellow-croaker.png", foodName:"● 美味十足的黄鱼菜谱", foodEffect:"用于治疗淤血疥癣", foodId:"4"}
                     ]};
                 if(result.data) {
                     $("#food").html(template('foodList', result));

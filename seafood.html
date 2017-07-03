@@ -55,7 +55,7 @@
 <script id="foodList" type="text/template">
     {{each data as $value}}
         <li class="food-list">
-            <a href="feast.html" class="external listhref" style="background-image: url({{$value.imgsrc}});">
+            <a href="feast.html?foodId={{$value.foodId}}" class="external listhref" style="background-image: url({{$value.imgsrc}});">
                 <h3>{{$value.foodName}}</h3>
                 <h4>{{$value.foodEffect}}</h4>
             </a>
