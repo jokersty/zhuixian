@@ -10,12 +10,56 @@ body {
 
 ul {
   li {
-    padding: toRem(30px) toRem(30px) 0 toRem(30px);
+    margin: toRem(30px) toRem(30px) 0 toRem(30px);
+    position: relative;
     img {
       display: block;
       width: 100%;
       height: toRem(336px);
       margin: 0 auto;
     }
+    .photo-line {
+      width: 100%;
+      height: toRem(80px);
+      position: absolute;
+      left: 0;
+      bottom: toRem(26px);
+      .white-line {
+        position: absolute;
+        left: toRem(30px);
+        top: toRem(27px);
+        background: url(../img/line.png) no-repeat center center;
+        background-size: toRem(26px) toRem(78px);
+        width: toRem(26px);
+        height: toRem(78px);
+      }
+      span {
+        display: block;
+        position: absolute;
+        left: toRem(78px);
+        top: 0;
+        font-size: 18px;
+        line-height: toRem(80px);
+        color: #fff;
+      }
+      .play-icon {
+        position: absolute;
+        right: toRem(30px);
+        top: toRem(16px);
+        background: url(../img/play-icon.png) no-repeat center center;
+        background-size: toRem(48px) toRem(48px);
+        width: toRem(48px);
+        height: toRem(48px);
+      }
+    }
+  }
+  li:nth-child(1) .photo-line{
+    background: rgba(255,203,46,0.75);
+  }
+  li:nth-child(2) .photo-line{
+    background: rgba(13,156,251,0.75);
+  }
+  li:nth-child(3) .photo-line{
+    background: rgba(159,46,255,0.75);
   }
 }

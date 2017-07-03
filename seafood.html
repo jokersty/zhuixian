@@ -54,7 +54,12 @@
 </div>
 <script id="foodList" type="text/template">
     {{each data as $value}}
-        <li class="food-list"><a href="feast.html" class="external"><img src="{{$value.imgsrc}}"/></a></li>
+        <li class="food-list">
+            <a href="feast.html" class="external listhref" style="background-image: url({{$value.imgsrc}});">
+                <h3>{{$value.foodName}}</h3>
+                <h4>{{$value.foodEffect}}</h4>
+            </a>
+        </li>
     {{/each}}
 </script>
 <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>

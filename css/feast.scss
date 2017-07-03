@@ -24,7 +24,7 @@
   .feast-list {
     li {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       padding: toRem(30px);
       img {
         display: block;
@@ -32,6 +32,8 @@
         height: toRem(110px);
       }
       .feast-list-content {
+        padding: 0 toRem(12px) 0 toRem(12px);
+        flex: 1;
         h3 {
           font-size: 17px;
           font-weight: normal;
@@ -40,7 +42,6 @@
           line-height: toRem(30px);
           font-size: 12px;
           margin: 0;
-          width: toRem(360px);
           height: toRem(60px);
           text-overflow: ellipsis;
           overflow: hidden;
@@ -54,6 +55,15 @@
         heigtht: toRem(36px);
         background: url(../img/right-arrow.png) no-repeat center center;
         background-size: toRem(20px) toRem(36px);
+      }
+      .new-logo {
+        width: toRem(54px);
+        height: toRem(30px);
+        background: url(../img/new.png) no-repeat center center;
+        background-size: toRem(54px) toRem(30px);
+        position: absolute;
+        top: toRem(32px);
+        right: toRem(70px);
       }
     }
   }

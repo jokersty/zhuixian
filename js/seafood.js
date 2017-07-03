@@ -7,10 +7,10 @@ var seafood = (function () {
             data: content,
             success: function (result) {
                 result = {data:[
-                    {imgsrc: "img/yellow-croaker.png"},
-                    {imgsrc: "img/yellow-croaker.png"},
-                    {imgsrc: "img/yellow-croaker.png"},
-                    {imgsrc: "img/yellow-croaker.png"}
+                    {imgsrc: "img/yellow-croaker.png", foodName:"● 美味十足的黄鱼菜谱", foodEffect:"用于治疗淤血疥癣"},
+                    {imgsrc: "img/yellow-croaker.png", foodName:"● 美味十足的黄鱼菜谱", foodEffect:"用于治疗淤血疥癣"},
+                    {imgsrc: "img/yellow-croaker.png", foodName:"● 美味十足的黄鱼菜谱", foodEffect:"用于治疗淤血疥癣"},
+                    {imgsrc: "img/yellow-croaker.png", foodName:"● 美味十足的黄鱼菜谱", foodEffect:"用于治疗淤血疥癣"}
                     ]};
                 if(result.data) {
                     $("#food").html(template('foodList', result));

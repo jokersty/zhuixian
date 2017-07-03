@@ -41,10 +41,25 @@
 .food-list {
   width: 100%;
 }
-.food-list img {
+.food-list .listhref {
   display: block;
   width: 100%;
   height: 8rem;
+  background: no-repeat center center;
+  background-size: 100% 8rem;
+}
+.food-list .listhref h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  padding-top: 2.25rem;
+  line-height: 2rem;
+}
+.food-list .listhref h4 {
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.25rem;
 }
 
 /*# sourceMappingURL=seafood.css.map */

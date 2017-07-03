@@ -49,9 +49,24 @@
 }
 .food-list {
   width: 100%;
-  img {
+  .listhref {
     display: block;
     width: 100%;
     height: toRem(320px);
+    background: no-repeat center center;
+    background-size: 100% toRem(320px);
+    h3 {
+      text-align: center;
+      color: #fff;
+      font-size: 18px;
+      padding-top: toRem(90px);
+      line-height: toRem(80px);
+    }
+    h4 {
+      text-align: center;
+      color: #fff;
+      font-size: 12px;
+      line-height: toRem(50px);
+    }
   }
 }

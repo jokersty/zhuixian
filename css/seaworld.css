@@ -39,13 +39,17 @@
 }
 .list .feast-list li {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0.75rem;
 }
 .list .feast-list li img {
   display: block;
   width: 4.5rem;
   height: 2.75rem;
+}
+.list .feast-list li .feast-list-content {
+  padding: 0 0.3rem 0 0.3rem;
+  flex: 1;
 }
 .list .feast-list li .feast-list-content h3 {
   font-size: 17px;
@@ -55,7 +59,6 @@
   line-height: 0.75rem;
   font-size: 12px;
   margin: 0;
-  width: 9rem;
   height: 1.5rem;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -68,6 +71,15 @@
   heigtht: 0.9rem;
   background: url(../img/right-arrow.png) no-repeat center center;
   background-size: 0.5rem 0.9rem;
+}
+.list .feast-list li .new-logo {
+  width: 1.35rem;
+  height: 0.75rem;
+  background: url(../img/new.png) no-repeat center center;
+  background-size: 1.35rem 0.75rem;
+  position: absolute;
+  top: 0.8rem;
+  right: 1.75rem;
 }
 
 /*# sourceMappingURL=seaworld.css.map */

@@ -3,13 +3,57 @@ body {
 }
 
 ul li {
-  padding: 0.75rem 0.75rem 0 0.75rem;
+  margin: 0.75rem 0.75rem 0 0.75rem;
+  position: relative;
 }
 ul li img {
   display: block;
   width: 100%;
   height: 8.4rem;
   margin: 0 auto;
+}
+ul li .photo-line {
+  width: 100%;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0.65rem;
+}
+ul li .photo-line .white-line {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.675rem;
+  background: url(../img/line.png) no-repeat center center;
+  background-size: 0.65rem 1.95rem;
+  width: 0.65rem;
+  height: 1.95rem;
+}
+ul li .photo-line span {
+  display: block;
+  position: absolute;
+  left: 1.95rem;
+  top: 0;
+  font-size: 18px;
+  line-height: 2rem;
+  color: #fff;
+}
+ul li .photo-line .play-icon {
+  position: absolute;
+  right: 0.75rem;
+  top: 0.4rem;
+  background: url(../img/play-icon.png) no-repeat center center;
+  background-size: 1.2rem 1.2rem;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+ul li:nth-child(1) .photo-line {
+  background: rgba(255, 203, 46, 0.75);
+}
+ul li:nth-child(2) .photo-line {
+  background: rgba(13, 156, 251, 0.75);
+}
+ul li:nth-child(3) .photo-line {
+  background: rgba(159, 46, 255, 0.75);
 }
 
 /*# sourceMappingURL=islandTour.css.map */
