@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+@function toRem($px){
+  @return $px / 40px * 1rem;       //iphone6,2*20px
+}
+
+.page {
+  padding: toRem(15px) toRem(30px) 0 toRem(30px);
+}
+
+.header {
+  h3 {
+    font-size: 18px;
+    line-height: toRem(60px);
+    font-weight: normal;
+  }
+  .header-text {
+    font-size: 12px;
+    line-height: toRem(36px);
+    .header-time {
+      color: #969696;
+    }
+    .header-source {
+      color: #31B3F7;
+      padding-left: toRem(20px);
+    }
+  }
+}
+
+.knowledge {
+  border: toRem(4px) solid #0AABF5;
+  border-radius: toRem(15px);
+  width: 100%;
+  padding: toRem(26px);
+  margin-top: toRem(34px);
+  .knowledge-title {
+    width: 100%;
+    height: toRem(219px);
+    background: url(../img/knowledge-title.png) no-repeat center center;
+    background-size: cover;
+  }
+  p {
+    font-size: 15px;
+    line-height: toRem(42px);
+    margin-top: toRem(26px);
+  }
+}
+
+.detail {
+  font-size: 15px;
+  padding-top: toRem(36px);
+  h3 {
+    font-size: 15px;
+    font-weight: normal;
+  }
+  p {
+    line-height: toRem(42px);
+    img {
+      display: block;
+      width: 100%;
+      height: toRem(336px);
+      margin: toRem(10px) 0;
+    }
+  }
+}
+
+.call {
+  display: block;
+  position: fixed;
+  bottom: toRem(30px);
+  left: 41%;
+  width: toRem(140px);
+  height: toRem(140px);
+  background: url(../img/phone-icon.png) no-repeat center center;
+  background-size: toRem(140px) toRem(140px);
+}

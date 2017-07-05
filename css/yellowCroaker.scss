@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+@function toRem($px){
+  @return $px / 40px * 1rem;       //iphone6,2*20px
+}
+
+.title {
+  background: url(../img/01.png) no-repeat center left;
+  background-size: toRem(40px) toRem(34px);
+  margin: toRem(49px) auto toRem(49px) auto;
+  width: toRem(360px);
+  padding-left: toRem(60px);
+  position: static;
+  span {
+    display: inline-block;
+    background: url(../img/lattice.png) no-repeat center center;
+    background-size: toRem(64px) toRem(64px);
+    width: toRem(64px);
+    height: toRem(64px);
+    line-height: toRem(64px);
+    text-align: center;
+    font-size: 18px;
+    color: #0AABF5;
+  }
+}
+
+.header {
+  display: block;
+  padding: 0 toRem(30px);
+  img {
+    display: block;
+    width: toRem(252px);
+    width: 100%;
+    margin: toRem(10px) 0;
+  }
+  p {
+    font-size: 15px;
+    line-height: toRem(42px);
+  }
+}
+
+.detail {
+  padding: 0 toRem(30px);
+  li {
+    .detail-header {
+      width: toRem(160px);
+      background: url(../img/food.png) no-repeat center left;
+      background-size: toRem(42px) toRem(42px);
+      font-size: 18px;
+      padding-left: toRem(64px);
+      margin: 0 auto;
+    }
+    .list-single {
+      width: 100%;
+      line-height: toRem(88px);
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+      span {
+        display: block;
+        padding: 0 toRem(22px);
+      }
+    }
+    .detail-header-tool {
+      background-image: url(../img/tool.png);
+    }
+    p {
+      font-size: 15px;
+      line-height: toRem(42px);
+    }
+    .detail-header-step {
+      background-image: url(../img/step.png);
+    }
+    .detail-header-tip {
+      width: toRem(170px);
+      background-image: url(../img/step.png);
+      padding-left: toRem(54px);
+    }
+  }
+}

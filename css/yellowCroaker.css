@@ -1,0 +1,74 @@
+.title {
+  background: url(../img/01.png) no-repeat center left;
+  background-size: 1rem 0.85rem;
+  margin: 1.225rem auto 1.225rem auto;
+  width: 9rem;
+  padding-left: 1.5rem;
+  position: static;
+}
+.title span {
+  display: inline-block;
+  background: url(../img/lattice.png) no-repeat center center;
+  background-size: 1.6rem 1.6rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  text-align: center;
+  font-size: 18px;
+  color: #0AABF5;
+}
+
+.header {
+  display: block;
+  padding: 0 0.75rem;
+}
+.header img {
+  display: block;
+  width: 6.3rem;
+  width: 100%;
+  margin: 0.25rem 0;
+}
+.header p {
+  font-size: 15px;
+  line-height: 1.05rem;
+}
+
+.detail {
+  padding: 0 0.75rem;
+}
+.detail li .detail-header {
+  width: 4rem;
+  background: url(../img/food.png) no-repeat center left;
+  background-size: 1.05rem 1.05rem;
+  font-size: 18px;
+  padding-left: 1.6rem;
+  margin: 0 auto;
+}
+.detail li .list-single {
+  width: 100%;
+  line-height: 2.2rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.detail li .list-single span {
+  display: block;
+  padding: 0 0.55rem;
+}
+.detail li .detail-header-tool {
+  background-image: url(../img/tool.png);
+}
+.detail li p {
+  font-size: 15px;
+  line-height: 1.05rem;
+}
+.detail li .detail-header-step {
+  background-image: url(../img/step.png);
+}
+.detail li .detail-header-tip {
+  width: 4.25rem;
+  background-image: url(../img/step.png);
+  padding-left: 1.35rem;
+}
+
+/*# sourceMappingURL=yellowCroaker.css.map */
