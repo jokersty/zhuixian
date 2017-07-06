@@ -36,6 +36,12 @@
 .detail {
   padding: 0 0.75rem;
 }
+.detail li img {
+  display: block;
+  width: 9.5rem;
+  width: 100%;
+  margin: 0.25rem 0;
+}
 .detail li .detail-header {
   width: 4rem;
   background: url(../img/food.png) no-repeat center left;
