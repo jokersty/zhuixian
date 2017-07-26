@@ -6,12 +6,12 @@ var seaworld = (function () {
             url: "",
             data: content,
             success: function (result) {
-                result = {data:[{imgsrc: "img/fish-dinner.png", fishName: "黄鱼", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"true"},
-                    {imgsrc: "img/fish-dinner.png", fishName: "黄鱼", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"true"},
-                    {imgsrc: "img/fish-dinner.png", fishName: "黄鱼", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"true"},
-                    {imgsrc: "img/fish-dinner.png", fishName: "黄鱼", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"false"},
-                    {imgsrc: "img/fish-dinner.png", fishName: "黄鱼", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"false"},
-                    {imgsrc: "img/fish-dinner.png", fishName: "黄鱼", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"false"}]};
+                result = {data:[{imgsrc: "img/fish-dinner.png", fishName: "黄鱼", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"true", seaId:"1"},
+                    {imgsrc: "img/fish-dinner.png", fishName: "黄鱼", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"true", seaId:"2"},
+                    {imgsrc: "img/fish-dinner.png", fishName: "黄鱼", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"true", seaId:"3"},
+                    {imgsrc: "img/fish-dinner.png", fishName: "黄鱼", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"false", seaId:"4"},
+                    {imgsrc: "img/fish-dinner.png", fishName: "黄鱼", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"false", seaId:"5"},
+                    {imgsrc: "img/fish-dinner.png", fishName: "黄鱼", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"false", seaId:"6"}]};
                 if(result.data) {
                     $("#List").html(template('fishList', result));
                 }

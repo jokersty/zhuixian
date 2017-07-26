@@ -52,18 +52,33 @@
     </div>
 </div>
 <script id="fishList" type="text/template">
+    <!--{{each data as $value}}-->
+    <!--<li class="border-bottom">-->
+        <!--<img src="{{$value.imgsrc}}"/>-->
+        <!--<div class="feast-list-content">-->
+            <!--<h3>{{$value.fishName}}</h3>-->
+            <!--<p>{{$value.fishText}}</p>-->
+        <!--</div>-->
+        <!--<div class="right-arrow"></div>-->
+        <!--{{if $value.isNew == "true"}}-->
+        <!--<div class="new-logo"></div>-->
+        <!--{{/if}}-->
+    <!--</li>-->
+    <!--{{/each}}-->
     {{each data as $value}}
-    <li class="border-bottom">
-        <img src="{{$value.imgsrc}}"/>
-        <div class="feast-list-content">
-            <h3>{{$value.fishName}}</h3>
-            <p>{{$value.fishText}}</p>
+    <a href="menu.html?menuId={{$value.menuId}}" class="external">
+        <div class="border-bottom fish-list">
+            <img src="{{$value.imgsrc}}"/>
+            <div class="feast-list-content">
+                <h3>{{$value.fishName}}</h3>
+                <p>{{$value.fishText}}</p>
+            </div>
+            <div class="right-arrow"></div>
+            {{if $value.isNew == "true"}}
+            <div class="new-logo"></div>
+            {{/if}}
         </div>
-        <div class="right-arrow"></div>
-        {{if $value.isNew == "true"}}
-        <div class="new-logo"></div>
-        {{/if}}
-    </li>
+    </a>
     {{/each}}
 </script>
 <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>

@@ -36,7 +36,7 @@
         </div>
         <div class="list">
             <!--<div class="header">共<span id="">10</span>道菜</div>-->
-            <ul class="feast-list" id="List">
+            <div class="feast-list" id="List">
                 <!--<li class="border-bottom">-->
                     <!--<img src="img/fish-dinner.png"/>-->
                     <!--<div class="feast-list-content">-->
@@ -45,7 +45,7 @@
                     <!--</div>-->
                     <!--<div class="right-arrow"></div>-->
                 <!--</li>-->
-            </ul>
+            </div>
         </div>
     </div>
     <div class="page" id="router2">
@@ -62,17 +62,19 @@
 
 <script id="fishList" type="text/template">
     {{each data as $value}}
-    <li class="border-bottom">
-        <img src="{{$value.imgsrc}}"/>
-        <div class="feast-list-content">
-            <h3>{{$value.fishName}}</h3>
-            <p>{{$value.fishText}}</p>
+    <a href="fishes.html?seaId={{$value.seaId}}" class="external">
+        <div class="border-bottom fish-list">
+            <img src="{{$value.imgsrc}}"/>
+            <div class="feast-list-content">
+                <h3>{{$value.fishName}}</h3>
+                <p>{{$value.fishText}}</p>
+            </div>
+            <div class="right-arrow"></div>
+            {{if $value.isNew == "true"}}
+                <div class="new-logo"></div>
+            {{/if}}
         </div>
-        <div class="right-arrow"></div>
-        {{if $value.isNew == "true"}}
-            <div class="new-logo"></div>
-        {{/if}}
-    </li>
+    </a>
     {{/each}}
 </script>
 

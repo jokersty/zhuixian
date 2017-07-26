@@ -37,25 +37,29 @@
   height: 1.85rem;
   padding: 0.75rem 0.75rem 0 0.75rem;
 }
-.list .feast-list li {
+.list .feast-list a {
+  display: block;
+  color: #646464;
+}
+.list .feast-list a .fish-list {
   display: flex;
   justify-content: flex-start;
   padding: 0.75rem;
 }
-.list .feast-list li img {
+.list .feast-list a .fish-list img {
   display: block;
   width: 4.5rem;
   height: 2.75rem;
 }
-.list .feast-list li .feast-list-content {
+.list .feast-list a .fish-list .feast-list-content {
   padding: 0 0.3rem 0 0.3rem;
   flex: 1;
 }
-.list .feast-list li .feast-list-content h3 {
+.list .feast-list a .fish-list .feast-list-content h3 {
   font-size: 17px;
   font-weight: normal;
 }
-.list .feast-list li .feast-list-content p {
+.list .feast-list a .fish-list .feast-list-content p {
   line-height: 0.75rem;
   font-size: 12px;
   margin: 0;
@@ -66,13 +70,13 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
-.list .feast-list li .right-arrow {
+.list .feast-list a .fish-list .right-arrow {
   width: 0.5rem;
   heigtht: 0.9rem;
   background: url(../img/right-arrow.png) no-repeat center center;
   background-size: 0.5rem 0.9rem;
 }
-.list .feast-list li .new-logo {
+.list .feast-list a .fish-list .new-logo {
   width: 1.35rem;
   height: 0.75rem;
   background: url(../img/new.png) no-repeat center center;

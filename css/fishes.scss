@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+@function toRem($px){
+  @return $px / 40px * 1rem;       //iphone6,2*20px
+}
+
+.page {
+  padding: toRem(15px) toRem(30px) 0 toRem(30px);
+}
+
+.header {
+  h3 {
+    font-size: 18px;
+    line-height: toRem(60px);
+    font-weight: normal;
+  }
+  .header-text {
+    font-size: 12px;
+    line-height: toRem(36px);
+    .header-time {
+      color: #969696;
+    }
+    .header-source {
+      color: #31B3F7;
+      padding-left: toRem(20px);
+    }
+  }
+}
+
+
+.detail {
+  font-size: 15px;
+  padding-top: toRem(36px);
+  line-height: toRem(50px);
+  img {
+    display: block;
+    width: 100%;
+    height: toRem(336px);
+    margin: toRem(10px) 0;
+  }
+  ul {
+    li {
+      position: relative;
+      .fish-class {
+        position: absolute;
+        width: toRem(168px);
+        left: 0;
+        margin: 0;
+        top: 0;
+      }
+      .fish-content {
+        padding-left: toRem(168px);
+      }
+    }
+  }
+}
+
+.buy {
+  position: fixed;
+  bottom: toRem(60px);
+  left: 42%;
+  width: toRem(110px);
+  height: toRem(110px);
+  background: #0AABF5;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 15px;
+  line-height: toRem(110px);
+  text-align: center;
+}
