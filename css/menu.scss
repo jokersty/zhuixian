@@ -49,13 +49,14 @@
       margin: toRem(22px) 0 toRem(16px) 0;
     }
     .detail-header {
-      width: toRem(160px);
+      width: toRem(140px);
       background: url(../img/food.png) no-repeat center left;
       background-size: toRem(42px) toRem(42px);
       font-size: 18px;
-      padding-left: toRem(64px);
+      padding-left: toRem(50px);
       margin: 0 auto;
       position: relative;
+      text-align: right;
       .detail-line-left {
         width: toRem(80px);
         height: toRem(2px);
@@ -73,17 +74,21 @@
         top: 46%;
       }
     }
-    .list-single {
-      width: 100%;
-      line-height: toRem(88px);
-      display: flex;
-      justify-content: space-between;
+    .detail-ingredients {
+      line-height: toRem(40px);
       font-size: 15px;
-      span {
-        display: block;
-        padding: 0 toRem(22px);
-      }
+      text-align: center;
+      margin: toRem(40px) auto;
     }
+    //.list-single {
+    //  width: toRem(100px);
+    //  line-height: toRem(88px);
+    //  font-size: 15px;
+    //  display: inline-block;
+    //  span {
+    //    padding: 0 toRem(22px);
+    //  }
+    //}
     .detail-header-tool {
       background-image: url(../img/tool.png);
     }
@@ -96,7 +101,10 @@
       color: #fff;
       text-align: center;
       line-height: toRem(40px);
-      margin-bottom: toRem(-15px);
+      //margin-bottom: toRem(-15px);
+    }
+    .margin-top-20 {
+      margin-top: toRem(20px);
     }
     p {
       font-size: 15px;
@@ -106,9 +114,9 @@
       background-image: url(../img/step.png);
     }
     .detail-header-tip {
-      width: toRem(170px);
+      width: toRem(160px);
       background-image: url(../img/tips.png);
-      padding-left: toRem(54px);
+      padding-left: toRem(52px);
     }
   }
 }
