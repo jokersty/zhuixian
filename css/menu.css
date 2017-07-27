@@ -81,6 +81,17 @@
 .detail li .detail-header-tool {
   background-image: url(../img/tool.png);
 }
+.detail li .detail-step-text {
+  width: 1rem;
+  height: 1rem;
+  margin: 0 auto;
+  background: #0AABF5;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 1rem;
+  margin-bottom: -0.375rem;
+}
 .detail li p {
   font-size: 15px;
   line-height: 1.05rem;

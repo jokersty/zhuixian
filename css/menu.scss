@@ -87,6 +87,17 @@
     .detail-header-tool {
       background-image: url(../img/tool.png);
     }
+    .detail-step-text {
+      width: toRem(40px);
+      height: toRem(40px);
+      margin: 0 auto;
+      background: #0AABF5;
+      border-radius: 50%;
+      color: #fff;
+      text-align: center;
+      line-height: toRem(40px);
+      margin-bottom: toRem(-15px);
+    }
     p {
       font-size: 15px;
       line-height: toRem(42px);
