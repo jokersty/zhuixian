@@ -8,12 +8,12 @@ var feast = (function () {
             success: function (result) {
                 result = { number: "6",
                     title: {imgsrc:"img/yellow-croaker.png", foodName:"● 美味十足的黄鱼菜谱", foodEffect:"用于治疗淤血疥癣", foodId:"1"},
-                    data:[{imgsrc: "img/fish-dinner.png", fishName: "黄鱼", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"true", menuId:"1"},
-                    {imgsrc: "img/fish-dinner.png", fishName: "黄鱼", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"true", menuId:"2"},
-                    {imgsrc: "img/fish-dinner.png", fishName: "黄鱼", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"true", menuId:"3"},
-                    {imgsrc: "img/fish-dinner.png", fishName: "黄鱼", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"false", menuId:"4"},
-                    {imgsrc: "img/fish-dinner.png", fishName: "黄鱼", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"false", menuId:"5"},
-                    {imgsrc: "img/fish-dinner.png", fishName: "黄鱼", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"false", menuId:"6"}]};
+                    data:[{imgsrc: "img/fish-dinner.png", fishName: "黄鱼菜", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"true", menuId:"1"},
+                    {imgsrc: "img/fish-dinner.png", fishName: "黄鱼菜", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"true", menuId:"2"},
+                    {imgsrc: "img/fish-dinner.png", fishName: "黄鱼菜", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"true", menuId:"3"},
+                    {imgsrc: "img/fish-dinner.png", fishName: "黄鱼菜", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"false", menuId:"4"},
+                    {imgsrc: "img/fish-dinner.png", fishName: "黄鱼菜", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"false", menuId:"5"},
+                    {imgsrc: "img/fish-dinner.png", fishName: "黄鱼菜", fishText: "黄鱼，有大小黄鱼之分，又名黄花鱼。", isNew:"false", menuId:"6"}]};
                 if(result.data) {
                     $("#List").html(template('fishList', result));
                     $("#listNumber").text(result.number);

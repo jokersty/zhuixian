@@ -1,6 +1,6 @@
-var menu = (function () {
+var fishSpecies = (function () {
 
-    function menu(content) {
+    function fishSpecies(content) {
         $.showIndicator();
         $.ajax({
             url: "",
@@ -46,13 +46,13 @@ var menu = (function () {
 
     function init() {
         var menuId;
-        var params = getUrlParams(menuId);
-        var menuId = params.menuId;
+        var params = getUrlParams(seaId);
+        var seaId = params.seaId;
         var content = {
-            menuId: ""
+            seaId: ""
         };
-        content.menuId = menuId;
-        menu(content);
+        content.seaId = seaId;
+        fishSpecies(content);
         $.hideIndicator();
     }
 
@@ -63,5 +63,5 @@ var menu = (function () {
 
 $(function () {
     $.showIndicator();
-    menu.init();
+    fishSpecies.init();
 });

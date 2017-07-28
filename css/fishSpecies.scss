@@ -5,11 +5,11 @@
 }
 
 .title {
-  background: url(../img/01.png) no-repeat center left;
-  background-size: toRem(40px) toRem(34px);
+  //background: url(../img/01.png) no-repeat center left;
+  //background-size: toRem(40px) toRem(34px);
   margin: toRem(49px) auto toRem(49px) auto;
   width: toRem(360px);
-  padding-left: toRem(60px);
+  //padding-left: toRem(60px);
   position: static;
   span {
     display: inline-block;
@@ -27,9 +27,9 @@
 .header {
   display: block;
   padding: 0 toRem(30px);
+  margin-bottom: toRem(30px);
   img {
     display: block;
-    width: toRem(252px);
     width: 100%;
     margin: toRem(10px) 0;
   }
@@ -49,7 +49,7 @@
       margin: toRem(22px) 0 toRem(16px) 0;
     }
     .detail-header {
-      width: toRem(140px);
+      width: toRem(200px);
       background: url(../img/food.png) no-repeat center left;
       background-size: toRem(42px) toRem(42px);
       font-size: 18px;
@@ -89,8 +89,12 @@
     //    padding: 0 toRem(22px);
     //  }
     //}
-    .detail-header-tool {
-      background-image: url(../img/tool.png);
+    .detail-header-species {
+      width: toRem(140px);
+      background-image: url(../img/species1.png);
+    }
+    .detail-header-nutrition {
+      background-image: url(../img/species2.png);
     }
     .detail-step-text {
       width: toRem(40px);
@@ -110,13 +114,17 @@
       font-size: 15px;
       line-height: toRem(42px);
     }
-    .detail-header-step {
-      background-image: url(../img/step.png);
+    .detail-header-season {
+      background-image: url(../img/species3.png);
     }
-    .detail-header-tip {
-      width: toRem(160px);
-      background-image: url(../img/tips.png);
-      padding-left: toRem(52px);
+    .detail-header-bug {
+      background-image: url(../img/species4.png);
+    }
+    .detail-header-effect {
+      background-image: url(../img/species5.png);
+    }
+    .detail-header-save {
+      background-image: url(../img/species6.png);
     }
   }
 }

@@ -1,9 +1,6 @@
 .title {
-  background: url(../img/01.png) no-repeat center left;
-  background-size: 1rem 0.85rem;
   margin: 1.225rem auto 1.225rem auto;
   width: 9rem;
-  padding-left: 1.5rem;
   position: static;
 }
 .title span {
@@ -21,10 +18,10 @@
 .header {
   display: block;
   padding: 0 0.75rem;
+  margin-bottom: 0.75rem;
 }
 .header img {
   display: block;
-  width: 6.3rem;
   width: 100%;
   margin: 0.25rem 0;
 }
@@ -43,7 +40,7 @@
   margin: 0.55rem 0 0.4rem 0;
 }
 .detail li .detail-header {
-  width: 3.5rem;
+  width: 5rem;
   background: url(../img/food.png) no-repeat center left;
   background-size: 1.05rem 1.05rem;
   font-size: 18px;
@@ -74,8 +71,12 @@
   text-align: center;
   margin: 1rem auto;
 }
-.detail li .detail-header-tool {
-  background-image: url(../img/tool.png);
+.detail li .detail-header-species {
+  width: 3.5rem;
+  background-image: url(../img/species1.png);
+}
+.detail li .detail-header-nutrition {
+  background-image: url(../img/species2.png);
 }
 .detail li .detail-step-text {
   width: 1rem;
@@ -94,13 +95,17 @@
   font-size: 15px;
   line-height: 1.05rem;
 }
-.detail li .detail-header-step {
-  background-image: url(../img/step.png);
+.detail li .detail-header-season {
+  background-image: url(../img/species3.png);
 }
-.detail li .detail-header-tip {
-  width: 4rem;
-  background-image: url(../img/tips.png);
-  padding-left: 1.3rem;
+.detail li .detail-header-bug {
+  background-image: url(../img/species4.png);
+}
+.detail li .detail-header-effect {
+  background-image: url(../img/species5.png);
+}
+.detail li .detail-header-save {
+  background-image: url(../img/species6.png);
 }
 
 .buy {
@@ -175,4 +180,4 @@
   right: 1.75rem;
 }
 
-/*# sourceMappingURL=menu.css.map */
+/*# sourceMappingURL=fishSpecies.css.map */

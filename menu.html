@@ -60,8 +60,38 @@
             </ul>
         </div>
         <a class="buy external" href="##">购买</a>
+        <div class="list">
+            <div class="header">推荐菜</div>
+            <ul class="feast-list" id="List">
+                <!--<li class="border-bottom">-->
+                <!--<img src="img/fish-dinner.png"/>-->
+                <!--<div class="feast-list-content">-->
+                <!--<h3>黄鱼</h3>-->
+                <!--<p>黄鱼，有大小黄鱼之分，又名黄花鱼。</p>-->
+                <!--</div>-->
+                <!--<div class="right-arrow"></div>-->
+                <!--</li>-->
+            </ul>
+        </div>
     </div>
 </div>
+<script id="fishList" type="text/template">
+    {{each data as $value}}
+    <a href="menu.html?menuId={{$value.menuId}}" class="external">
+        <div class="border-bottom fish-list">
+            <img src="{{$value.imgsrc}}"/>
+            <div class="feast-list-content">
+                <h3>{{$value.fishName}}</h3>
+                <p>{{$value.fishText}}</p>
+            </div>
+            <div class="right-arrow"></div>
+            {{if $value.isNew == "true"}}
+            <div class="new-logo"></div>
+            {{/if}}
+        </div>
+    </a>
+    {{/each}}
+</script>
 <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
 <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
 <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
